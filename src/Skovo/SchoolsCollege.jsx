@@ -20,7 +20,7 @@ const SchoolsColleges = () => {
     },
     {
       id: 2,
-      name: "Oakridge Academy",
+      name: "Deepak Academy",
       type: "private",
       location: "Oakridge, CA",
       ranking: 4.8,
