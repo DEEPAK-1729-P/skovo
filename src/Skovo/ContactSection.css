@@ -1,0 +1,127 @@
+/* Contact Section Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-heading {
+    color: #4169E1;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  /* Cards Container */
+  .contact-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  /* Individual Contact Card */
+  .contact-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Icon Container */
+  .icon-container {
+    background-color: rgba(65, 105, 225, 0.1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-card:hover .icon-container {
+    background-color: rgba(65, 105, 225, 0.2);
+  }
+  
+  /* Icons */
+  .contact-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover .contact-icon {
+    transform: scale(1.1);
+  }
+  
+  /* Text Elements */
+  .contact-type {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  /* Buttons */
+  .contact-button {
+    background-color: #4169E1;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #3056D3;
+    transform: scale(1.05);
+  }
+  
+  .email-button {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .contact-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .contact-card {
+      width: 100%;
+      max-width: 400px;
+    }
+  }

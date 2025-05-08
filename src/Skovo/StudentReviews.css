@@ -1,0 +1,124 @@
+.reviews-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .reviews-section h2 {
+    text-align: center;
+    color: #4169e1;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  .reviews-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+    cursor: grab;
+    gap: 20px;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .reviews-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .reviews-container:active {
+    cursor: grabbing;
+  }
+  
+  .review-card {
+    min-width: 320px;
+    max-width: 320px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f4ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  
+  .avatar span {
+    color: #4169e1;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .reviewer-info h3 {
+    font-size: 18px;
+    margin: 0 0 4px 0;
+    color: #333;
+  }
+  
+  .reviewer-info p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .rating {
+    margin-bottom: 15px;
+  }
+  
+  .star {
+    font-size: 22px;
+    margin-right: 4px;
+  }
+  
+  .star.full {
+    color: #ffc107;
+  }
+  
+  .star.half {
+    position: relative;
+    color: #e0e0e0;
+  }
+  
+  .star.half::before {
+    content: '★';
+    position: absolute;
+    color: #ffc107;
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .star.empty {
+    color: #e0e0e0;
+  }
+  
+  .review-text {
+    color: #555;
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .review-card {
+      min-width: 280px;
+    }
+    
+    .reviews-section h2 {
+      font-size: 30px;
+    }
+  }
